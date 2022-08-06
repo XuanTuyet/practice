@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="asset/style-form.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Form Basic -->
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <form action="#" method="post" class="personal-form">
+            <div>
+                <label for="salutation">Salutation</label>
+                <select name="salutation" id="salutation">Salutation
+                    <option>--None--</option>
+                    <option>--None 1--</option>
+                    <option>--None 2--</option>
+                    <option>--None 3--</option>
+                    <option>--None 4--</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="fName">First name:</label>
+                <input type="text" id="fName" name="fName">
+            </div>
+
+            <div>
+                <label for="lName">Last name:</label>
+                <input type="text" id="lName" name="lName">
+            </div>
+
+            <div>
+                <label>Gender:</label>
+                <label for="male">Male:</label>
+                <input type="radio" value="male" id="male" name="male">
+                <label for="female">Female:</label>
+                <input type="radio" value="female" id="female" name="male">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div>
+                <label for="add">Address: </label>
+                <textarea name="address" id="add"> </textarea>
+            </div>
+
+            <label for="submit"></label>
+            <input type="submit" id="submit">
+        </form>
+    </fieldset>
+
+    <hr>
+
+    <!-- Boostrap form -->
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <form action="#" method="post" class="personal-form2">
+            <div class="mb-lg-4 w-25">
+                <label for="salutation2" class="form-label"> Salutation </label>
+                <select name="salutation" id="salutation2" class="form-select">Salutation
+                    <option>--None--</option>
+                    <option>--None 1--</option>
+                    <option>--None 2--</option>
+                    <option>--None 3--</option>
+                    <option>--None 4--</option>
+                </select>
+            </div>
+
+
+            <div class="mb-lg-4 w-25">
+                <label for="fName2" class="form-label"> First name: </label>
+                <input type="text" id="fName2" name="fName2" class="form-control" placeholder="First name">
+            </div>
+
+            <div class="mb-lg-4 w-25">
+                <label for="lName2" class="form-label"> Last name: </label>
+                <input type="text" id="lName2" name="lName2" class="form-control" placeholder="Last name">
+            </div>
+
+            <div class="mb-lg-4 w-25">
+                <label for="optionsGender" class="form-label">Gender:</label>
+
+                <div id="optionsGender">
+                    <label for="male2" class="form-label"> Male: </label>
+                    <input type="radio" value="male" id="male2" name="gender" class="form-check-input">
+                    <label for="female2" class="form-label"> Female: </label>
+                    <input type="radio" value="female" id="female2" name="gender" class="form-check-input">
+                </div>
+            </div>
+
+            <div class="mb-lg-4 w-25">
+                <label for="email2" class="form-label"> Email: </label>
+                <input type="email" id="email2" name="email2" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="mb-lg-4 w-25">
+                <label for="dob2" class="form-label"> Date of Birth: </label>
+                <input type="date" id="dob2" name="dob2" class="form-control">
+            </div>
+
+            <div class="mb-lg-4 w-25">
+                <label for="add2" class="form-label"> Address: </label>
+                <textarea name="address2" id="add2" class="form-control">Your address...</textarea>
+            </div>
+
+            <label for="submit2" class="form-label"></label>
+            <input type="submit" id="submit2" class="form-control btn btn-lg btn-info w-25">
+        </form>
+    </fieldset>
+</body>
+</html>
