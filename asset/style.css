@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("font/Helvetica.ttf");
+}
+
+body {
+    font-family: "Helvetica", serif;
+}
+
+#exp > h1 > i {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+}
+#formation > h1 > i {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+}
+
+.content-item > ul > li {
+    margin-bottom: 0px;
+}
+
+.content-item > span {
+    font-style: italic;
+}
+
+.timeline{
+    font-weight: bold;
+}
+
+ul > li {
+    margin-bottom: 12px;
+}
