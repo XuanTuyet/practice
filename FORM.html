@@ -12,15 +12,15 @@
     <fieldset>
         <legend>Personal Details</legend>
 
-        <form action="#" method="post" class="personal-form">
+        <form action="#" method="post" class="personal-form" name="personal_form" onsubmit="return validateForm()">
             <div>
-                <label for="salutation">Salutation</label>
-                <select name="salutation" id="salutation">Salutation
-                    <option>--None--</option>
-                    <option>--None 1--</option>
-                    <option>--None 2--</option>
-                    <option>--None 3--</option>
-                    <option>--None 4--</option>
+                <label for="job">Jobs</label>
+                <select name="job" id="job">Job
+                    <option value="">--None--</option>
+                    <option value="IT">IT</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Barista">Barista</option>
+                    <option value="Call Girl">Call Girl</option>
                 </select>
             </div>
 
@@ -59,68 +59,70 @@
             </div>
 
             <label for="submit"></label>
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" name="submit" value="submit">
         </form>
     </fieldset>
 
     <hr>
 
+
     <!-- Boostrap form -->
-    <fieldset>
-        <legend>Personal Details</legend>
+<!--    <fieldset>-->
+<!--        <legend>Personal Details</legend>-->
 
-        <form action="#" method="post" class="personal-form2">
-            <div class="mb-lg-4 w-25">
-                <label for="salutation2" class="form-label"> Salutation </label>
-                <select name="salutation" id="salutation2" class="form-select">Salutation
-                    <option>--None--</option>
-                    <option>--None 1--</option>
-                    <option>--None 2--</option>
-                    <option>--None 3--</option>
-                    <option>--None 4--</option>
-                </select>
-            </div>
+<!--        <form action="#" method="post" class="personal-form2">-->
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="salutation2" class="form-label"> Salutation </label>-->
+<!--                <select name="salutation" id="salutation2" class="form-select">Salutation-->
+<!--                    <option>&#45;&#45;None&#45;&#45;</option>-->
+<!--                    <option>&#45;&#45;None 1&#45;&#45;</option>-->
+<!--                    <option>&#45;&#45;None 2&#45;&#45;</option>-->
+<!--                    <option>&#45;&#45;None 3&#45;&#45;</option>-->
+<!--                    <option>&#45;&#45;None 4&#45;&#45;</option>-->
+<!--                </select>-->
+<!--            </div>-->
 
 
-            <div class="mb-lg-4 w-25">
-                <label for="fName2" class="form-label"> First name: </label>
-                <input type="text" id="fName2" name="fName2" class="form-control" placeholder="First name">
-            </div>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="fName2" class="form-label"> First name: </label>-->
+<!--                <input type="text" id="fName2" name="fName2" class="form-control" placeholder="First name">-->
+<!--            </div>-->
 
-            <div class="mb-lg-4 w-25">
-                <label for="lName2" class="form-label"> Last name: </label>
-                <input type="text" id="lName2" name="lName2" class="form-control" placeholder="Last name">
-            </div>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="lName2" class="form-label"> Last name: </label>-->
+<!--                <input type="text" id="lName2" name="lName2" class="form-control" placeholder="Last name">-->
+<!--            </div>-->
 
-            <div class="mb-lg-4 w-25">
-                <label for="optionsGender" class="form-label">Gender:</label>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="optionsGender" class="form-label">Gender:</label>-->
 
-                <div id="optionsGender">
-                    <label for="male2" class="form-label"> Male: </label>
-                    <input type="radio" value="male" id="male2" name="gender" class="form-check-input">
-                    <label for="female2" class="form-label"> Female: </label>
-                    <input type="radio" value="female" id="female2" name="gender" class="form-check-input">
-                </div>
-            </div>
+<!--                <div id="optionsGender">-->
+<!--                    <label for="male2" class="form-label"> Male: </label>-->
+<!--                    <input type="radio" value="male" id="male2" name="gender" class="form-check-input">-->
+<!--                    <label for="female2" class="form-label"> Female: </label>-->
+<!--                    <input type="radio" value="female" id="female2" name="gender" class="form-check-input">-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="mb-lg-4 w-25">
-                <label for="email2" class="form-label"> Email: </label>
-                <input type="email" id="email2" name="email2" class="form-control" placeholder="Email">
-            </div>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="email2" class="form-label"> Email: </label>-->
+<!--                <input type="email" id="email2" name="email2" class="form-control" placeholder="Email">-->
+<!--            </div>-->
 
-            <div class="mb-lg-4 w-25">
-                <label for="dob2" class="form-label"> Date of Birth: </label>
-                <input type="date" id="dob2" name="dob2" class="form-control">
-            </div>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="dob2" class="form-label"> Date of Birth: </label>-->
+<!--                <input type="date" id="dob2" name="dob2" class="form-control">-->
+<!--            </div>-->
 
-            <div class="mb-lg-4 w-25">
-                <label for="add2" class="form-label"> Address: </label>
-                <textarea name="address2" id="add2" class="form-control">Your address...</textarea>
-            </div>
+<!--            <div class="mb-lg-4 w-25">-->
+<!--                <label for="add2" class="form-label"> Address: </label>-->
+<!--                <textarea name="address2" id="add2" class="form-control">Your address...</textarea>-->
+<!--            </div>-->
 
-            <label for="submit2" class="form-label"></label>
-            <input type="submit" id="submit2" class="form-control btn btn-lg btn-info w-25">
-        </form>
-    </fieldset>
+<!--            <label for="submit2" class="form-label"></label>-->
+<!--            <input type="submit" id="submit2" class="form-control btn btn-lg btn-info w-25">-->
+<!--        </form>-->
+<!--    </fieldset>-->
+    <script src="asset/js/form.js" type="text/javascript"></script>
 </body>
 </html>
