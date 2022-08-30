@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="content" id="content">
+
+  </div>
+
+<script type="text/javascript">
+    var divContent = document.getElementById('content');
+
+    var newContent = document.createElement('span');
+    newContent.textContent = "day la noi dung cua the";
+
+    divContent.append(newContent);
+
+    var animals = [
+        {
+            "name": "con gà",
+            "weight": '45',
+            "type": "Gia Cầm"
+        },
+        {
+            "name": "con mèo",
+            "weight": 10,
+            "type": "Động Vật có dzú"
+        },
+        {
+            "name": "con rắn",
+            "weight": 10,
+            "type": "Bò sát"
+        }
+    ];
+
+    /**
+     * <div class="content" id="content">
+     *     <div>
+     *         <div>
+     *             <span>name</span>
+     *             <p>con gà</p>
+     *         </div>
+     *         <div>
+     *             <span>weight</span>
+     *             <p>45</p>
+     *         </div>
+     *         <div>
+     *             <span>type</span>
+     *             <p>Gia Cầm</p>
+     *         </div>
+     *     </div>
+     * </div>
+     *
+     **/
+
+    animals.forEach(animal => {
+        let divAnimal = document.createElement('div');
+        let divName = document.createElement('div');
+        let divWeight = document.createElement('div');
+        let divType = document.createElement('div');
+
+        let spanName = document.createElement('span');
+        let pName = document.createElement('p');
+        let spanWeight = document.createElement('span');
+        let pWeight = document.createElement('p');
+        let spanType = document.createElement('span');
+        let pType = document.createElement('p');
+
+        spanName.textContent = "Name ";
+        pName.textContent = animal.name;
+        spanWeight.textContent = "Weight ";
+        pWeight.textContent = animal.weight;
+        spanType.textContent = "Type ";
+        pType.textContent = animal.type;
+
+        pName.setAttribute("style", "display: inline-block;");
+        pName.setAttribute("class", "pName");
+        pWeight.setAttribute("style", "display: inline-block;");
+        pType.setAttribute("style", "display: inline-block;");
+        divAnimal.setAttribute("style", "border: 1px solid black; margin: 20px; padding: 20px");
+
+        divContent.append(divAnimal);
+        divAnimal.append(divName);
+        divAnimal.append(divWeight);
+        divAnimal.append(divType);
+        divName.append(spanName);
+        divName.append(pName)
+        divWeight.append(spanWeight);
+        divWeight.append(pWeight);
+        divType.append(spanType);
+        divType.append(pType);
+
+    });
+</script>
+</body>
+</html>
