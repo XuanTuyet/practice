@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="data">
+
+  </div>
+<script type="text/javascript">
+    var typeAnimal = [
+        'dongvatdatron',
+        'dongvatcovu',
+        'sucvat'
+    ];
+
+    const data = document.getElementsByClassName('data');
+
+    for (let i = 0; i < typeAnimal.length; i++){
+        if(typeAnimal[i] === 'dongvatcovu'){
+            continue;
+        }
+
+        console.log(typeAnimal[i]);
+    }
+
+    var i = 0;
+
+    while (i < 10){
+        console.log("Giet duoc 1 con vat");
+        i++;
+    }
+
+    var i = 0;
+
+    do {
+        console.log("Da hoi sinh 1 con vat");
+        i++;
+    } while (i < 5);
+
+    typeAnimal.every(value => {
+        if(value === 'dongvatcovu'){
+            return false;
+        }
+
+       console.log(value);
+
+       return true;
+    });
+
+</script>
+</body>
+</html>
