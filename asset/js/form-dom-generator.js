@@ -1,7 +1,8 @@
 var form_generator = document.getElementById('form-generator');
-var fieldSet = document.createElement('fieldset');
+const fieldSet = document.createElement('fieldset');
 var legend = document.createElement('legend');
 var form = document.createElement('form');
+var newEl = null;
 
 const inputs =
     {
@@ -137,7 +138,7 @@ form.setAttribute('class', 'personal-form');
 form.setAttribute('name', 'personal_form');
 
 //Set textContext legend element
-legend.textContent = "Personal Details";
+// legend.textContent = "Personal Details";
 
 //append fieldset into form_generator
 form_generator.append(fieldSet);
@@ -156,7 +157,7 @@ for (let input in inputs){
 
                 if(object === "key"){
                     if(inputs[input][element][object] === "label"){
-                        var newEl = document.createElement(inputs[input][element].key);
+                        newEl = document.createElement(inputs[input][element].key);
                         newDiv.append(newEl);
                     }
 
@@ -176,13 +177,13 @@ for (let input in inputs){
                     }
 
                     if(inputs[input][element][object] === "select"){
-                        var newSelect = document.createElement(inputs[input][element].key);
+                        let newSelect = document.createElement(inputs[input][element].key);
                         newSelect.setAttribute('name', inputs[input][element].name);
                         newSelect.setAttribute('id', inputs[input][element].id);
 
                         //Generate options tag
                         inputs[input][element].options.forEach(option => {
-                            var newOption = document.createElement('option');
+                            let newOption = document.createElement('option');
                             newOption.setAttribute('value', option);
 
                             // if(option === ""){
