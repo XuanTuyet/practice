@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div>
+            <label for="check">Check first character uppercase</label>
+            <input type="text" name="check" id="check">
+        </div>
+        <button onclick="checkIt()">Check it</button>
+    <script>
+        function checkIt () {
+            const demo = document.getElementById("check").value;
+            let pattern = /^[A-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴÝỶỸ]{1}|\s\w$/;
+            if(pattern.test(demo)) {
+                alert ("This string is uppercase");
+            }
+            else {
+                alert ("This string isn't uppercase");
+            }
+        }
+    </script>
+</body>
+</html>
