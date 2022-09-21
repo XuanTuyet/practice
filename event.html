@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <marquee direction="up" onmouseover="stop()" onmouseout="start()" onclick="popupMessage()" onkeydown="keydown(this)">Test text</marquee>
+    </div>
+
+    <script type="text/javascript">
+        function popupMessage(){
+            alert("stop function");
+        }
+
+        function keydown(event){
+            console.log(event);
+        }
+
+
+    </script>
+</body>
+</html>
