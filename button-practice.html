@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice button custom css</title>
+    <style type="text/css">
+        #download {
+            border: 0 solid;
+            border-radius: 30px;
+            background-color: #04ddb2;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            width: 200px;
+            height: 60px;
+            font-weight: 600;
+            font-size: 25px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            font-family: Arial,serif;
+        }
+        #download:hover {
+            transition: transform .6s;
+            transform: scale3d(1.05,1.05,1.05);
+        }
+    </style>
+</head>
+<body>
+ <button type="button" id="download">Download</button>
+</body>
+</html>
